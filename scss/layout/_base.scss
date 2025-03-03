@@ -1,7 +1,12 @@
 @use '../abstracts/' as a;
 
+body {
+    background-color: #08070B;
+    @include a.add-flex(column, $justify-content: center, $align-items: center);
+}
+
 main {
     @include a.add-flex($justify-content: center, $align-items: center);
     padding: 0 a.rem(16);
-    background-color: #08070B;
+    width: 100%;
 }
