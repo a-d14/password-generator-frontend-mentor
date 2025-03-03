@@ -1,0 +1,22 @@
+@use '../abstracts/' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,700;1,700&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.heading {
+    font-size: clamp(a.rem(24), a.rem(16) + 1.5vw, a.rem(32));
+    line-height: clamp(a.rem(32), a.rem(32) + 1.5vw, a.rem(43));
+}
+
+.body {
+    font-size: clamp(a.rem(16), a.rem(8) + 2vw, a.rem(18));
+    line-height: a.rem(23);
+}
+
+main * {
+    font-size: inherit;
+    line-height: inherit;
+}
